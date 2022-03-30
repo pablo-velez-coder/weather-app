@@ -1,0 +1,43 @@
+
+.header__brand{
+    text-decoration: none;
+}
+.header__brandTitle  {
+    color: black;
+    padding: 0.26rem;
+}
+.nav-item {
+    
+    font-size: 1.7rem;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    @media (max-width:500px){
+        justify-content: center;
+    }
+}
+
+.header__brandTitle {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+.header__favoritesButton {
+    color: gray ;
+    z-index: 100;
+    justify-content: flex-end;
+}
+
+.header__options {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 60%;
+}
+

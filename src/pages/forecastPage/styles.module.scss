@@ -1,0 +1,87 @@
+
+.cityDetails  {
+    padding:1rem;
+    padding-top: 3rem;
+    &__current{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display:flex;
+        background: linear-gradient(90deg, rgba(79, 206, 235, 0.928) 54%, rgba(81, 184, 240, 0.968) 100%);
+        padding:1rem;
+        justify-content: space-between;
+        border-radius: 28px;
+        box-shadow: 5px 4px 10px rgba(0,0,0,.2);
+        &__left{
+            
+            &__image{
+                height:70px;
+                position: relative;
+                >img{
+                    top:-80px;
+                    left:-40px;
+                    position: absolute;
+                    height:200px;
+                    width:200px;
+                }
+            }
+            >p{
+                margin-top: 1rem;
+                color: #fff;
+                font-weight: 800;
+                font-size: 1.1rem;
+                margin-left: 1.6rem
+            }
+        }
+        &__right{
+            >h3{
+                font-size: 3rem;
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 0;
+                line-height: 1.25;
+                background: -webkit-linear-gradient(rgba(203, 226, 207, 0.577), rgb(255, 255, 255));
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            >p{
+                text-align: right;
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+    }
+    &__place{
+        display:flex;
+        justify-content:space-between; 
+        &__info{
+            >h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0rem;
+            line-height: 1;
+        }
+        >p{
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+        >small{
+            color: gray;
+        }}
+    }
+    &__back{
+        margin-top: 0.5rem;
+        padding-right: 0.7rem;
+    }
+
+    &__list{
+        width:100%;
+        overflow:auto;
+        margin-top: 0.5rem;
+        display: flex;
+        padding:1rem 0;
+        gap: 1rem;
+        justify-content:space-between;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+}

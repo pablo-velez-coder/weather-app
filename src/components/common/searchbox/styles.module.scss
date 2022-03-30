@@ -1,0 +1,18 @@
+.searchboxForm{
+    display:flex;
+    justify-content:center;
+    &Input{
+        background-color: transparent !important;
+        border-radius: 20px !important;
+        border-color: rgb(188, 209, 226) !important;
+        border-bottom-color: rgb(175, 159, 159) !important;
+    }
+    &Button{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color:transparent;
+       border-color: lightgray; 
+
+    }
+}
