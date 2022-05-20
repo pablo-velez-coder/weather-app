@@ -3,6 +3,10 @@
   margin:0;
   box-sizing: border-box;
 }
+:root{
+  --main-gradient-color: rgba(79, 206, 235, 0.928);
+  --secondary-gradient-color: rgba(81, 184, 240, 0.968);
+}
 
 body {
   margin: 0;

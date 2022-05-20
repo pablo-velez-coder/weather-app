@@ -1,12 +1,13 @@
-import { Form, Input } from 'antd';
+import { Button, Form, Input } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { ArrowRightOutlined } from '@ant-design/icons';
 import { useForecast } from 'context/provider';
 import styles from './styles.module.scss'
 
 export const SearchBox = () => {
 
   const {setCityName} = useForecast()
-  const navigate =  useNavigate()
+  const navigate = useNavigate()
 
     const onFinish = ({city}:{city:string}) =>{
       setCityName(city)
@@ -23,7 +24,7 @@ export const SearchBox = () => {
       <Form.Item
         name="city"
         rules={[{ required: true,
-          pattern:new RegExp(/^[a-z]+$/gi),
+          pattern:new RegExp(/^[a-z _]+$/gi),
           message: 'Please input a valid text!' }]}
       >
         <Input 
@@ -32,15 +33,14 @@ export const SearchBox = () => {
         />
       </Form.Item>
 
-
-      <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-        <button
+      <Form.Item wrapperCol={{ offset: 4 }}>
+        <Button
+        ghost
+        icon={<ArrowRightOutlined />}
+        shape="circle"
         className={styles.searchboxFormButton}
-        type="submit">
-        go
-        </button>
+        />
       </Form.Item>
-
     </Form>
   )
 }

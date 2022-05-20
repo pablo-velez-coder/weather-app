@@ -37,6 +37,7 @@ export const ForecastProvider = ({children}:{children:React.ReactElement})=>{
       },
     [cityName])
     
+    
     useEffect(() => {
         if(searchedCities[cityName]){
           setCityDetails(searchedCities[cityName]['city'])

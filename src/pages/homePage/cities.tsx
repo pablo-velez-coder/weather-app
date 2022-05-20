@@ -10,7 +10,6 @@ const Cities = () => {
         <Header />
         <div className={styles.cities}>
         <div className={styles.cities__list}>
-
         <h2>Recent searches:</h2>  
             <CitiesTable  />
         </div>

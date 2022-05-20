@@ -16,7 +16,7 @@ const CityCard: React.FC<Props> = ({cityData}: Props) => {
         <div className={styles.cityCard}
         >
            <h3> {day}</h3>
-            <p  data-testid="min-temp">
+            <p data-testid="min-temp">
                 {minTemp}<span>&#x2103;</span>
             </p>
          <img 

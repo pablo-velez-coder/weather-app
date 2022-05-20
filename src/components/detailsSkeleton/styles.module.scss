@@ -1,0 +1,14 @@
+.cityDetails {
+    &__list{
+        width:100%;
+        overflow:auto;
+        margin-top: 0.5rem;
+        display: flex;
+        padding:1rem 0;
+        gap: 1rem;
+        justify-content:space-between;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+}
